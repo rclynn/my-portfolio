@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
+import Certifications from './components/Certifications'
 import Hobbies from './components/Hobbies'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AllCertifications from './pages/AllCertifications'
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -18,6 +21,23 @@ export default function App() {
     }
     return true
   })
+  const location = useLocation()
+
+  // Handle hash scrolling on cross-page navigation
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const target = document.querySelector(location.hash)
+        if (target) {
+          const offset = 80
+          const top = target.getBoundingClientRect().top + window.scrollY - offset
+          window.scrollTo({ top, behavior: 'smooth' })
+        }
+      }, 100)
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [location])
 
   useEffect(() => {
     if (isDarkMode) {
@@ -47,13 +67,19 @@ export default function App() {
 
       <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Hobbies />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={
+          <main>
+            <Hero />
+            <About />
+            <Projects />
+            <Certifications />
+            <Hobbies />
+            <Contact />
+          </main>
+        } />
+        <Route path="/certifications" element={<AllCertifications />} />
+      </Routes>
 
       <Footer />
     </div>

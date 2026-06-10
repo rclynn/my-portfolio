@@ -1,4 +1,5 @@
-import { GraduationCap, Award, Briefcase, MapPin, Calendar, ExternalLink } from 'lucide-react'
+import { GraduationCap, Award, Briefcase, MapPin, Calendar, ExternalLink, ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { bio, skillCategories, experience, education, certifications } from '../data/portfolioData'
 import useReveal from '../hooks/useReveal'
 
@@ -55,7 +56,7 @@ export default function About() {
             </div>
 
             {/* Certification card */}
-            {certifications.map((cert, i) => {
+            {certifications.slice(0, 1).map((cert, i) => {
               const CardContent = (
                 <>
                   <div className="flex items-center justify-between mb-4">
@@ -78,16 +79,25 @@ export default function About() {
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block glass-card p-6 group hover:bg-white/[0.02] transition-colors duration-300"
+                  className="block glass-card p-6 group hover:border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300"
                 >
                   {CardContent}
                 </a>
               ) : (
-                <div key={i} className="glass-card p-6 group">
+                <div key={i} className="glass-card p-6">
                   {CardContent}
                 </div>
               )
             })}
+
+            {/* See More Link */}
+            <Link 
+              to="/certifications"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent-500 hover:text-accent-400 transition-colors mt-2"
+            >
+              See all certifications
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { Menu, X, Send, ChevronRight, Sun, Moon } from 'lucide-react'
 import { personalInfo, navLinks } from '../data/portfolioData'
 
@@ -6,6 +7,9 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
+
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -16,19 +20,33 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
   const handleResumeRequest = (e) => {
     e.preventDefault()
     setIsOpen(false)
-    const el = document.querySelector('#contact')
-    if (el) {
-      const offset = 80
-      const top = el.getBoundingClientRect().top + window.scrollY - offset
-      window.scrollTo({ top, behavior: 'smooth' })
-      
-      // Dispatch custom event to prefill contact form
-      window.dispatchEvent(new CustomEvent('requestResume'))
+    
+    if (location.pathname !== '/') {
+      navigate('/#contact')
+      // Delay prefill to give home page time to mount
+      setTimeout(() => window.dispatchEvent(new CustomEvent('requestResume')), 500)
+    } else {
+      const el = document.querySelector('#contact')
+      if (el) {
+        const offset = 80
+        const top = el.getBoundingClientRect().top + window.scrollY - offset
+        window.scrollTo({ top, behavior: 'smooth' })
+        
+        // Dispatch custom event to prefill contact form
+        window.dispatchEvent(new CustomEvent('requestResume'))
+      }
     }
   }
 
-  // Track active section via IntersectionObserver
+  // Track active section via IntersectionObserver and Route
   useEffect(() => {
+    if (location.pathname !== '/') {
+      // If we are on a different page, highlight that page's nav item
+      const pageName = location.pathname.split('/')[1]
+      setActiveSection(pageName)
+      return
+    }
+
     const sections = document.querySelectorAll('section[id]')
     const observer = new IntersectionObserver(
       (entries) => {
@@ -42,16 +60,33 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
     )
     sections.forEach((s) => observer.observe(s))
     return () => observer.disconnect()
-  }, [])
+  }, [location.pathname])
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      const navbar = document.getElementById('navbar')
+      if (isOpen && navbar && !navbar.contains(e.target)) {
+        setIsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [isOpen])
 
   const handleNavClick = (e, href) => {
     e.preventDefault()
     setIsOpen(false)
-    const target = document.querySelector(href)
-    if (target) {
-      const offset = 80
-      const top = target.getBoundingClientRect().top + window.scrollY - offset
-      window.scrollTo({ top, behavior: 'smooth' })
+    
+    if (location.pathname !== '/') {
+      navigate(`/${href}`)
+    } else {
+      const target = document.querySelector(href)
+      if (target) {
+        const offset = 80
+        const top = target.getBoundingClientRect().top + window.scrollY - offset
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
     }
   }
 
@@ -152,11 +187,11 @@ export default function Navbar({ isDarkMode, toggleTheme }) {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-500 ease-out ${
-          isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden overflow-hidden transition-all duration-500 ease-out absolute top-full left-0 right-0 w-full bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-b border-slate-200 dark:border-white/[0.06] shadow-2xl ${
+          isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 border-transparent shadow-none'
         }`}
       >
-        <div className="glass border-t border-slate-200 dark:border-white/[0.06] px-4 py-4 space-y-1">
+        <div className="px-4 py-4 space-y-1">
           {navLinks.map((link) => {
             const isActive = activeSection === link.href.slice(1)
             return (
