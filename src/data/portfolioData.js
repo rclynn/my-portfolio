@@ -140,7 +140,7 @@ export const certifications = [
   {
     title: 'Being an Effective Team Member',
     issuer: 'Professional Certification',
-    description: 'Developed skills in teamwork, collaboration, and contributing positively to team goals.',
+    description: 'Developed strong teamwork and collaboration skills, contributing effectively to shared objectives and team success.',
     link: '/certifications/Being an Effective Team Member.png',
     category: 'Basic',
   },
@@ -154,7 +154,7 @@ export const certifications = [
   {
     title: 'Effective Team Communication',
     issuer: 'Professional Certification',
-    description: 'Mastered techniques for clear, concise, and professional communication within workplace teams.',
+    description: 'Mastered effective workplace communication, fostering clear, concise, and professional interactions within cross-functional teams.',
     link: '/certifications/Effective Team Communication.png',
     category: 'Basic',
   },
