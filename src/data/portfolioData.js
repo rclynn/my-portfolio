@@ -719,7 +719,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'SQLAlchemy: Querying Data',
+    title: 'SQL Databases Using SQLAlchemy: Querying Data',
     issuer: 'Professional Certification',
     description: 'Writing complex queries, filters, and aggregations using Python and SQLAlchemy.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Querying Data.png',
