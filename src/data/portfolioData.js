@@ -761,7 +761,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Django: Models and Class-based Views',
+    title: 'Web Applications with Django: Models and Class-based Views',
     issuer: 'Professional Certification',
     description: 'Advanced routing and object-oriented views for scalable web architecture.',
     link: '/certifications/Web Applications with Django_ Models and Class-based Views.png',
