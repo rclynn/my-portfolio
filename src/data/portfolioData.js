@@ -684,7 +684,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Altair: Fundamental Graphs',
+    title: 'Python with Altair: Plotting Fundamental Graphs',
     issuer: 'Professional Certification',
     description: 'Building core charts, scatter plots, and histograms using declarative syntax.',
     link: '/certifications/Python with Altair_ Plotting Fundamental Graphs.png',
