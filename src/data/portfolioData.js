@@ -621,7 +621,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Python: Classes, Errors, & Modules',
+    title: 'Python Development: Creating Classes, Handling Errors, & Importing Modules',
     issuer: 'Professional Certification',
     description: 'Object-oriented programming, exception handling, and code organization in Python.',
     link: '/certifications/Python Development_ Creating Classes, Handling Errors, & Importing Modules.png',
