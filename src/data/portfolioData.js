@@ -649,7 +649,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Python: Complex Data Types',
+    title: 'Python Development: Performing Operations with Complex Data Types',
     issuer: 'Professional Certification',
     description: 'Manipulating lists, dictionaries, sets, and tuples for complex data operations.',
     link: '/certifications/Python Development_ Performing Operations with Complex Data Types.png',
