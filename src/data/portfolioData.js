@@ -775,7 +775,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Django: Working with Models',
+    title: 'Web Applications with Django: Working with Models',
     issuer: 'Professional Certification',
     description: 'Designing database schemas, models, and utilizing the Django ORM.',
     link: '/certifications/Web Applications with Django_ Working with Models.png',
