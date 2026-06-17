@@ -166,7 +166,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Psychological Safety: Building a Culture of Inclusion',
+    title: 'Psychological Safety: Building a Culture of Inclusion and Innovation',
     issuer: 'Professional Certification',
     description: 'Explored strategies to foster inclusive, safe, and innovative workplace cultures.',
     link: '/certifications/Psychological Safety_ Building a Culture of Inclusion and Innovation.png',
