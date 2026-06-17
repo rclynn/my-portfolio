@@ -768,7 +768,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Django: Built-in and Custom Applications',
+    title: 'Web Application with Django: Using Built-in and Custom Applications',
     issuer: 'Professional Certification',
     description: 'Extending the Django admin interface and leveraging built-in authentication.',
     link: '/certifications/Web Applications with Django_ Using Built-in and Custom Applications.png',
