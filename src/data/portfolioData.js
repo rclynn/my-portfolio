@@ -698,7 +698,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'SQLAlchemy: Joins, Views, & Indexes',
+    title: 'SQL Databases Using SQLAlchemy: Chaining Joins, Views, & Indexes',
     issuer: 'Professional Certification',
     description: 'Advanced database schema design, querying, and performance tuning.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Chaining Joins, Views, & Indexes.png',
