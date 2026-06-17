@@ -733,7 +733,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'SQLAlchemy: Using the ORM',
+    title: 'SQL Databases Using SQLAlchemy: Using the SQLAlchemy ORM',
     issuer: 'Professional Certification',
     description: 'Mapping Python classes to database tables using the SQLAlchemy Object Relational Mapper.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Using the SQLAlchemy ORM.png',
