@@ -663,7 +663,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Seaborn: Time Series & Regression',
+    title: 'Python Statistical Plots: Time Series Data & Regression Analysis in Seaborn',
     issuer: 'Professional Certification',
     description: 'Visualizing temporal data and statistical regression models using Seaborn.',
     link: '/certifications/Python Statistical Plots_ Time Series Data & Regression Analysis in Seaborn.png',
