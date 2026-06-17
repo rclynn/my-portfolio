@@ -642,7 +642,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Python: Advanced Functions',
+    title: 'Python Development: Leveraging Functions with Lambdas, Generators, Closures, & Decorators',
     issuer: 'Professional Certification',
     description: 'Mastering lambdas, generators, closures, and decorators for functional programming.',
     link: '/certifications/Python Development_ Leveraging Functions with Lambdas, Generators, Closures, & Decorators.png',
