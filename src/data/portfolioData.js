@@ -705,7 +705,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'SQLAlchemy: Getting Started',
+    title: 'SQL Databases Using SQLAlchemy: Getting Started',
     issuer: 'Professional Certification',
     description: 'Connecting to databases and executing fundamental SQL commands in Python.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Getting Started.png',
