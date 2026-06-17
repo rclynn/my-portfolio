@@ -747,7 +747,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Django: Building Multiple Apps',
+    title: 'Web Applications with Django: Building Multiple Apps in a Project',
     issuer: 'Professional Certification',
     description: 'Structuring complex web applications and integrating multiple Django apps.',
     link: '/certifications/Web Applications with Django_ Building Multiple Apps in a Project.png',
