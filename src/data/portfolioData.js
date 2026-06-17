@@ -754,7 +754,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Django: Introducing the Framework',
+    title: 'Web Applications with Django: Introduction to the Django Web Framework',
     issuer: 'Professional Certification',
     description: 'Fundamentals of the Django MTV architecture and rapid web development.',
     link: '/certifications/Web Applications with Django_ Introducing the Django Web Framework.png',
