@@ -740,7 +740,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Generative AI Tools for Python',
+    title: 'Using Generative AI Tools to Learn Python',
     issuer: 'Professional Certification',
     description: 'Leveraging AI tools as a pair programmer for Python development.',
     link: '/certifications/Using Generative AI Tools to Learn Python.png',
