@@ -628,7 +628,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Python: Defining & Invoking Functions',
+    title: 'Python Development: Defining, Configuring, & Invoking Functions',
     issuer: 'Professional Certification',
     description: 'Comprehensive guide to function arguments, scope, and execution in Python.',
     link: '/certifications/Python Development_ Defining, Configuring, & Invoking Functions.png',
