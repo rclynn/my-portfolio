@@ -23,7 +23,7 @@ export default function Certifications() {
             Licenses & <span className="gradient-text">Certifications</span>
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
-            Professional validations of my technical expertise and commitment to continuous learning.
+            Professional certifications that validate my technical expertise and commitment to continuous learning.
           </p>
         </div>
 
