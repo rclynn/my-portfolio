@@ -691,7 +691,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Altair: Specialized Graphs',
+    title: 'Python with Altair: Working with Specialized Graphs',
     issuer: 'Professional Certification',
     description: 'Creating advanced visualizations, heatmaps, and layered charts in Altair.',
     link: '/certifications/Python with Altair_ Working with Specialized Graphs.png',
