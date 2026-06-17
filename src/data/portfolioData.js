@@ -726,7 +726,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'SQLAlchemy: Triggers & Procedures',
+    title: 'SQL Databases Using SQLAlchemy: Using Triggers, Stored Procedures, & Transactions',
     issuer: 'Professional Certification',
     description: 'Managing database-level logic, stored procedures, and transactions.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Using Triggers, Stored Procedures, & Transactions.png',
