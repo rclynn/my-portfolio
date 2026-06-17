@@ -712,7 +712,7 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'SQLAlchemy: Manipulating Data',
+    title: 'SQL Databases Using SQLAlchemy: Manipulating Data',
     issuer: 'Professional Certification',
     description: 'CRUD operations, database transactions, and data integrity using SQLAlchemy.',
     link: '/certifications/SQL Databases Using SQLAlchemy_ Manipulating Data.png',
