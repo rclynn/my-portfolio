@@ -677,7 +677,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Altair: Introduction',
+    title: 'Python with Altair: An Introduction to Altair',
     issuer: 'Professional Certification',
     description: 'Declarative statistical visualization for Python using the Altair library.',
     link: '/certifications/Python with Altair_ An Introduction to Altair.png',
