@@ -670,7 +670,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Seaborn: Visualizing & Analyzing Data',
+    title: 'Python Statistical Plots: Visualizing & Analyzing data Using Seaborn',
     issuer: 'Professional Certification',
     description: 'Creating informative statistical plots and exploratory data analysis graphics.',
     link: '/certifications/Python Statistical Plots_ Visualizing & Analyzing Data Using Seaborn.png',
