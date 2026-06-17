@@ -579,14 +579,14 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Operations with petl: Advanced Transformations',
+    title: 'Operations with petl: Advanced Extraction & Transformation',
     issuer: 'Professional Certification',
     description: 'Complex data extractions, transformations, and loading (ETL) using petl.',
     link: '/certifications/Operations with petl_ Advanced Extractions & Transformations.png',
     category: 'Professional',
   },
   {
-    title: 'Operations with petl: Basic Transformations',
+    title: 'Operations with petl: Basic Data Transformations',
     issuer: 'Professional Certification',
     description: 'Fundamental data manipulation, filtering, and table transformations with petl.',
     link: '/certifications/Operations with petl_ Basic Data Transformations.png',
@@ -600,14 +600,14 @@ export const certifications = [
     category: 'Basic',
   },
   {
-    title: 'Prompt Engineering to Learn Python',
+    title: 'Prompt Engineering for Programmers to Learn Python',
     issuer: 'Professional Certification',
     description: 'Accelerated learning of Python fundamentals using AI prompting.',
     link: '/certifications/Prompt Engineering for Programmers to Learn Python.png',
     category: 'Basic',
   },
   {
-    title: 'Prompt Engineering for Python Loops',
+    title: 'Prompt Engineering to Learn Python Loops & Functions',
     issuer: 'Professional Certification',
     description: 'Utilizing AI to master control flow, loops, and functions in Python.',
     link: '/certifications/Prompt Engineering to Learn Python Loops & Functions.png',
