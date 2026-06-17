@@ -656,7 +656,7 @@ export const certifications = [
     category: 'Professional',
   },
   {
-    title: 'Python: If Statements & Comprehensions',
+    title: 'Python Development: Working with If Statements, Loops, & Comprehensions',
     issuer: 'Professional Certification',
     description: 'Control flow structures and Pythonic list, set, and dictionary comprehensions.',
     link: '/certifications/Python Development_ Working with If Statements, Loops, & Comprehensions.png',
